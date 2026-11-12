@@ -1,0 +1,175 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #eef2f7;
+    padding: 30px 15px;
+}
+
+.container {
+    max-width: 850px;
+    margin: auto;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.header {
+    text-align: center;
+    background: #1769aa;
+    color: white;
+    padding: 25px;
+    border-radius: 8px;
+    margin-bottom: 25px;
+}
+
+.header h1 {
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: #1769aa;
+    border-bottom: 2px solid #1769aa;
+    padding-bottom: 8px;
+    margin: 25px 0 20px;
+}
+
+.form-row {
+    display: flex;
+    gap: 20px;
+}
+
+.form-group {
+    flex: 1;
+    margin-bottom: 18px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: none;
+    border-color: #1769aa;
+    box-shadow: 0 0 4px rgba(23,105,170,0.3);
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.checkbox input {
+    width: auto;
+}
+
+.checkbox label {
+    margin: 0;
+    font-weight: normal;
+}
+
+button {
+    padding: 13px 25px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+    margin-right: 10px;
+}
+
+.submit-btn {
+    background: #1769aa;
+    color: white;
+}
+
+.submit-btn:hover {
+    background: #104c80;
+}
+
+.reset-btn {
+    background: #ddd;
+    color: #333;
+}
+
+.result-container {
+    max-width: 850px;
+    margin: auto;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.success {
+    color: #198754;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.result-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.result-table td {
+    padding: 13px;
+    border: 1px solid #ddd;
+}
+
+.result-table td:first-child {
+    font-weight: bold;
+    background: #eef4fa;
+    width: 35%;
+}
+
+.print-btn, .back-btn {
+    background: #1769aa;
+    color: white;
+    margin-top: 15px;
+}
+
+@media(max-width: 600px) {
+    .form-row {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .container {
+        padding: 18px;
+    }
+}
+
+@media print {
+    .print-btn, .back-btn {
+        display: none;
+    }
+
+    body {
+        background: white;
+        padding: 0;
+    }
+
+    .result-container {
+        box-shadow: none;
+    }
+}
